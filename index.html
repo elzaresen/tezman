@@ -5,24 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900|Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Tezman Logo" class="header_logo">
-    </header>
-    <main>
-        <div class="first">
-            <h1>Tezman &mdash; платформа для бронирования услуг салонов красоты и парикмахерских Бишкека.</h1>
-            <p>Бесплатное приложение Tezman позволяет Вам бронировать услуги различных салонов красоты и парикмахерских в два клика. В Tezman собрано большое количество салонов красоты Бишкека, каждый из которых предоставляет полную информацию о своих услугах и мастерах. 
-                Некоторые из функций Tezman:
-                <ul>
-                        <li>Просматривайте различные салоны Бишкека и сравнивайте их между собой. </li>
-                        <li>Проверяйте список своих броней. </li>
-                        <li>Получайте оповещение о бронировании, чтобы не пропустить запись.</li>
-                        <li>Получайте скидки на услуги салонов красоты и парикмахерских.</li>
-                </ul>
-            </p>
+<header>
+    <div class="container"></div>
+    <img src="img/logo.png" alt="Tezman Logo" class="header_logo">
+</header>
+<main>
+    <div class="first">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-8">
+                    <h1 class="h2">Бронируйте услуги салонов красоты и парикмахерских Бишкека вместе с Tezman!</h1>
+                    <div class="applinks">
+                        <a target="_blank" href="https://itunes.apple.com/kg/app/tezman/id1179640828"><img
+                                src="img/apple-store.png" alt="Tezman в Apple Store"></a>
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=in.tezman.android"><img
+                                src="img/google-play.png" alt="Tezman в Google Play"></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="main-carousel">
+                        <div class="carousel-cell">
+                            <img src="img/app1.png" alt=""/>
+                            <p>Просматривайте различные салоны Бишкека и сравнивайте их между собой.</p>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/app2.png" alt=""/>
+                            <p>Проверяйте список своих броней.</p>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/app2.png" alt=""/>
+                            <p>Получайте оповещение о бронировании, чтобы не пропустить запись.</p>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/app2.png" alt=""/>
+                            <p>Получайте скидки на услуги салонов красоты и парикмахерских.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
+    </div>
+</main>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true,
+        autoPlay: true,
+    });
+</script>
 </body>
 </html>
