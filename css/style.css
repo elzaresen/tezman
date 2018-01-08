@@ -29,7 +29,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #00B233;
+    background-color: #F77E2E;
     color: #fff;
     padding: 100px 0;
 }
@@ -74,9 +74,15 @@ header{
 .features{
     padding: 100px 0;
 }
-.features h2{
+.section-title{
     font-weight: 600;
     text-transform: uppercase;
+}
+.section-title-line{
+    width: 150px;
+    margin-left: 0;
+    border-width: 3px;
+    border-color:#ed4b38;
 }
 .features-list{
     list-style: none;
@@ -85,7 +91,20 @@ header{
 }
 .features-list-item{
     text-align: center;
+    margin-top: 50px;
 }
 .features-list-item img{
-    width: 80%;
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+
+@media(max-width: 767px){
+
+    .section-title{
+        text-align: center;
+    }
+    .section-title-line{
+        margin: 0 auto;
+    }
 }
