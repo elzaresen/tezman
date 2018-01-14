@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Tezman - Бронируйте услуги салонов красоты и парикмахерских</title>
+    <meta name="description" content="Бесплатное приложение Tezman позволяет Вам бронировать услуги различных салонов красоты и парикмахерских в два клика. В Tezman собрано большое количество салонов красоты Бишкека, каждый из которых предоставляет полную информацию о своих услугах и мастерах. ">
+    <meta name="keywords" content="забронировать салон красоты, записаться в салон красоты, салон красоты, парикмахерская, красота">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#ed4b38">
+    <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900|Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
           integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
@@ -13,8 +21,12 @@
 </head>
 <body>
 <header>
-    <div class="container"></div>
-    <img src="img/logo.png" alt="Tezman Logo" class="header_logo">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-8 col-6"><img src="img/logo.png" alt="Tezman Logo" class="header_logo"></div>
+            <div class="col-sm-4 col-6 text-right"><a class="header-link" href="#">Для партнеров</a></div>
+        </div>
+    </div>
 </header>
 <main>
     <div class="first">
@@ -30,52 +42,55 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="main-carousel">
-                        <div class="carousel-cell">
-                            <img src="img/app1.png" alt=""/>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cum dolor .</p>
-                        </div>
-                        <div class="carousel-cell">
-                            <img src="img/app2.png" alt=""/>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet .</p>
-                        </div>
-                        <div class="carousel-cell">
-                            <img src="img/app2.png" alt=""/>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. .</p>
-                        </div>
-                        <div class="carousel-cell">
-                            <img src="img/app2.png" alt=""/>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur .</p>
-                        </div>
-                    </div>
+                    <img src="img/app1.png" class="phone" alt=""/>
                 </div>
             </div>
         </div>
     </div>
     <section class="features">
         <div class="container">
-            <h2 class="section-title display-4">С помощью Tezman вы</h2>
+            <h2 class="section-title h1">С помощью Tezman вы</h2>
             <hr class="section-title-line">
             <ul class="features-list row ">
                 <li class="features-list-item col-12 col-md-3">
                     <img class="features-list-item-image" src="img/compare.svg" alt="">
-                    <p class="features-list-item-description">Сравниваете салоны красоты по желаемым критериям</p>
+                    <p class="features-list-item-description">Сможете найти своего мастера благодары большой партнерской базы</p>
                 </li>
                 <li class="features-list-item col-12 col-md-3">
                     <img class="features-list-item-image" src="img/discount.svg" alt="">
-                    <p class="features-list-item-description">Получаете скидки на услуги стилистов и парикмахеров</p>
+                    <p class="features-list-item-description">Получаете скидки на услуги</p>
                 </li>
                 <li class="features-list-item col-12 col-md-3">
                     <img class="features-list-item-image" src="img/time.svg" alt="">
-                    <p class="features-list-item-description">Экономите время на поиске идеального для вас стилиста</p>
+                    <p class="features-list-item-description">Экономите время при записи к вашему мастеру</p>
                 </li>
                 <li class="features-list-item col-12 col-md-3">
                     <img class="features-list-item-image" src="img/queue.svg" alt="">
-                    <p class="features-list-item-description">Назначаете точное время и не ждете очередей</p>
+                    <p class="features-list-item-description">Можете записаться в любое время дня и ночи!</p>
                 </li>
             </ul>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-12">
+                    <p>&copy; Tezman &mdash; 2017</p>
+                </div>
+                <div class="col-sm-4 col-12">
+                    <p><a class="footer-link" href="#">Для партнеров</a></p>
+                </div>
+                <div class="col-sm-4 col-12">
+                    <p class="h5">Контакты</p>
+                    <p>
+                        <a href="tel:+995552504753" class="footer-link phone-link">+995 552 504 753</a>
+                        <br>
+                        <a href="mailto:askhat.nice@gmail.com" class="footer-link">askhat.nice@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </main>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -86,15 +101,5 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
         integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script>
-    $('.main-carousel').flickity({
-        // options
-        cellAlign: 'left',
-        contain: true,
-        autoPlay: true,
-        pageDots: false,
-    });
-</script>
 </body>
 </html>
